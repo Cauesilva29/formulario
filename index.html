@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/javinha.js"></script>
+</head>
+<body>
+   <div class="container">
+
+    <h1>Formulário de envio</h1>
+
+    <form action="post" action="#">
+
+        <label for="nome">nome</label>
+        <input type="text" name="nome" id="nome" required placeholder="digite seu nome"> <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="digite seu nome"> <br>
+
+        <label for="data">Data</label>
+        <input type="date" id="date" name="data" required> <br>
+
+        <div class="genero">
+        <label for="genero">Feminino</label>
+        <input type="radio" id="genero" name="genero"> <br>
+         
+        <label for="genero">Masculino</label>
+        <input type="radio" name="genero" id="genero"> 
+        
+        </div>
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" required placeholder="digite sua senha">
+
+        <label for="confirmacaosenha">Confirme sua senha</label>
+        <input type="password" name="confirmacaosenha" id="confirmacaosenha" required placeholder="confirme sua senha"> <br>
+
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+            <option value="">Estado</option>
+            <option value="">Acre</option>
+            <option value="">Amazonas</option>
+            <option value="">Amapá</option>
+            <option value="">Roraima</option>
+            <option value="">Rondônia</option>
+            <option value="">Pará</option>
+            <option value="">Tocantins</option>
+            <option value="">Goiás</option>
+            <option value="">Mato Grosso</option>
+            <option value="">Mato Grosso do Sul</option>
+            <option value="">Rio grande do Sul</option>
+            <option value="">Paraná</option>
+            <option value="">Santa Catarina</option>
+            <option value="">São Paulo </option>
+            <option value="">Rio de janeiro</option>
+            <option value="">Minas Gerais</option>
+            <option value="	">Espírito Santo</option>
+            <option value="">Rio grande do Norte</option>
+            <option value="">Ceará</option>
+            <option value="">Piauí</option>
+            <option value="">Maranhão</option>
+            <option value="">Alagoas</option>
+            <option value="">Sergipe</option>
+            <option value="">Paraíba</option>
+            <option value="">Pernambuco</option>
+            <option value="">Distrito Federal</option>
+        </select>
+
+        <label for="cidade">Cidade</label>
+        <select name="cidade" id="cidade">
+            <option value="">São Paulo</option>
+            <option value="">Rio de janeiro</option>
+            <option value="">Guarulhos</option>
+            <option value="">Cuiabá</option>
+            <option value="">Florianópolis</option>
+            <option value="">Porto Alegre</option>
+            <option value="">Recife</option>
+            <option value="">Palmas</option>
+            <option value="">Pindamonhangaba</option>
+            <option value="">Salvador</option>
+            <option value="">Salgadinho</option>
+            <option value="">Mogi das Cruzes</option>
+            <option value="">Suzano</option>
+            <option value="">Campo Grande</option>
+            <option value="">Brasília</option>
+            <option value="">Goiania</option>
+            <option value="">Curitiba</option>
+            <option value="">Rio Branco</option>
+            <option value="">Manaus</option>
+            <option value="">João Pessoa</option>
+            <option value="">Natal</option>
+            <option value="">Aracaju</option>
+            <option value="">Belém</option>
+            <option value="">Macapá</option>
+            <option value="">Belo Horizonte</option>
+            <option value="">Vitória</option>
+            <option value="">Guarujá</option>
+
+        </select> <br>
+
+         <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" rows="5"></textarea> <br>
+
+        
+
+
+        <button onclick="enviar ()" class="botao"> enviar</button>
+
+
+
+    </form>
+   </div>
+</body>
+</html>
